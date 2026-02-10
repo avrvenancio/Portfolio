@@ -7,7 +7,7 @@ interface WorkProps {
 const caseStudies = [
   {
     id: 1,
-    title: 'Enterprise Design System',
+    title: 'Nokia Design System',
     category: 'Design Systems',
     description: 'Building a comprehensive design system for a Fortune 500 company, serving 50+ product teams',
     year: '2024',
@@ -16,7 +16,7 @@ const caseStudies = [
   },
   {
     id: 2,
-    title: 'Mobile Banking Redesign',
+    title: 'Nokia Cloud Manager',
     category: 'Product Design',
     description: 'Reimagining the mobile banking experience for 2M+ users with focus on accessibility and trust',
     year: '2023',
@@ -25,7 +25,7 @@ const caseStudies = [
   },
   {
     id: 3,
-    title: 'Healthcare Portal UX Research',
+    title: 'Teya Customer Support Platform',
     category: 'UX Research',
     description: 'Mixed-methods research study to improve patient portal engagement and health outcomes',
     year: '2023',
