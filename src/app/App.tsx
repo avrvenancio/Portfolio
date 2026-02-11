@@ -33,7 +33,7 @@ export default function App() {
               onClick={() => handleNavigate('home')}
               className="uppercase tracking-tight hover:underline"
             >
-              Portfolio
+              Ana Venâncio Portfolio
             </button>
             
             <div className="flex gap-0 border-2 border-black">
@@ -72,7 +72,7 @@ export default function App() {
           <CaseStudy id={selectedCaseStudy} onBack={handleBackToWork} />
         ) : (
           <>
-            {currentSection === 'home' && <Home onNavigate={handleNavigate} />}
+            {currentSection === 'home' && <Home onNavigate={handleNavigate} onCaseStudyClick={handleCaseStudyClick} />}
             {currentSection === 'work' && <Work onCaseStudyClick={handleCaseStudyClick} />}
             {currentSection === 'about' && <About />}
           </>

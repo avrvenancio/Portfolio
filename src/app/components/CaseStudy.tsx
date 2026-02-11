@@ -7,10 +7,10 @@ interface CaseStudyProps {
 
 const caseStudyData = {
   1: {
-    title: 'Enterprise Design System',
+    title: 'Nokia Design System',
     subtitle: 'Building a comprehensive design system for a Fortune 500 company',
     category: 'Design Systems',
-    year: '2024',
+    year: '2024-Present',
     hero: 'https://images.unsplash.com/photo-1769149068959-b11392164add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBzeXN0ZW0lMjBjb21wb25lbnRzfGVufDF8fHx8MTc3MDYyMDQxNXww&ixlib=rb-4.1.0&q=80&w=1080',
     overview: {
       problem: 'A Fortune 500 enterprise with 50+ product teams was experiencing significant design inconsistencies, duplicated work, and slow development cycles. Each team built their own components, resulting in 200+ different button styles across products.',
@@ -164,11 +164,11 @@ const caseStudyData = {
     ],
   },
   2: {
-    title: 'Mobile Banking Redesign',
+    title: 'Nokia Cloud Manager',
     subtitle: 'Reimagining the mobile banking experience for 2M+ users',
     category: 'Product Design',
-    year: '2023',
-    hero: 'https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwaW50ZXJmYWNlJTIwbW9iaWxlJTIwYXBwfGVufDF8fHx8MTc3MDY0ODI1OXww&ixlib=rb-4.1.0&q=80&w=1080',
+    year: '2024',
+    hero: 'https://images.unsplash.com/photo-1690627931320-16ac56eb2588?q=80&w=3586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     overview: {
       problem: 'A regional bank\'s mobile app had a 3.2 star rating and declining usage. Users complained about confusing navigation, difficult task completion, and lack of trust signals. The business was losing customers to digital-first competitors.',
       role: 'Lead Product Designer',
@@ -315,10 +315,10 @@ const caseStudyData = {
     ],
   },
   3: {
-    title: 'Healthcare Portal UX Research',
+    title: 'Teya Customer Service Platform',
     subtitle: 'Mixed-methods research to improve patient portal engagement',
-    category: 'UX Research',
-    year: '2023',
+    category: 'Product Design',
+    year: '2021-2023',
     hero: 'https://images.unsplash.com/photo-1755985022555-09c0ec136e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcHJvZHVjdCUyMGRlc2lnbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzA2NDgyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
     overview: {
       problem: 'A healthcare system\'s patient portal had only 22% active usage despite 1.2M registered patients. Low engagement meant patients weren\'t scheduling appointments, requesting refills, or viewing test results online, creating inefficiencies for both patients and staff.',

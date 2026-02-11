@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 const experience = [
   {
-    year: '2022-Present',
-    title: 'Senior Product Designer',
-    company: 'Tech Corp',
+    year: 'January 2024-Present',
+    title: 'UX Designer',
+    company: 'Nokia',
     description: 'Leading design system initiatives and product design for enterprise SaaS platform. Managing cross-functional collaboration with 8 product teams.',
     achievements: [
       'Built and launched design system serving 50+ designers and developers',
@@ -14,9 +14,9 @@ const experience = [
     ],
   },
   {
-    year: '2020-2022',
+    year: 'December 2021-July 2023',
     title: 'Product Designer',
-    company: 'Digital Solutions Inc',
+    company: 'Teya (former SaltPay)',
     description: 'Designed mobile and web experiences for fintech products. Conducted user research and usability testing.',
     achievements: [
       'Redesigned mobile banking app, increasing engagement by 35%',
@@ -25,9 +25,9 @@ const experience = [
     ],
   },
   {
-    year: '2018-2020',
-    title: 'UX Designer',
-    company: 'StartupCo',
+    year: 'May 2017-October 2017',
+    title: 'Researcher',
+    company: 'Conservation Practice',
     description: 'End-to-end product design for B2B SaaS startup. Contributed to design system and user research initiatives.',
     achievements: [
       'Designed core product features from 0-1',
@@ -36,9 +36,9 @@ const experience = [
     ],
   },
   {
-    year: '2016-2018',
-    title: 'Junior UX/UI Designer',
-    company: 'Creative Agency',
+    year: 'September 2013-December 2017',
+    title: 'Researcher',
+    company: 'Az - Rede de Investigação em Azulejo | FLUL',
     description: 'Worked on diverse client projects ranging from e-commerce to healthcare. Learned fundamentals of user-centered design.',
     achievements: [
       'Designed interfaces for 15+ client projects',
@@ -66,7 +66,7 @@ export function About() {
   return (
     <div className="min-h-screen">
       {/* Intro */}
-      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -81,11 +81,12 @@ export function About() {
           <p className="text-base max-w-3xl leading-relaxed">
             Currently seeking opportunities to join a team where I can contribute to meaningful products, mentor other designers, and continue growing expertise in design systems and research.
           </p>
+        
         </motion.div>
       </section>
 
       {/* Experience Timeline */}
-      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -93,75 +94,86 @@ export function About() {
         >
           <h2 className="text-xs uppercase tracking-wider mb-6">Experience</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border-2 border-black">
+          <div className="border-2 border-black">
             {/* Timeline Navigation */}
-            <div className="lg:col-span-4 border-b-2 lg:border-b-0 lg:border-r-2 border-black">
-              {experience.map((job, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedYear(index)}
-                  className={`w-full text-left border-b-2 border-black last:border-b-0 transition-colors ${
-                    selectedYear === index
-                      ? 'bg-black text-white'
-                      : 'bg-white hover:bg-gray-100'
-                  }`}
-                >
-                  <div className="p-3 border-b border-black">
-                    <div className="text-xs uppercase mb-1">Period</div>
-                    <div className="text-sm">{job.year}</div>
-                  </div>
-                  <div className="p-3 border-b border-black">
-                    <div className="text-xs uppercase mb-1">Role</div>
-                    <div className="text-sm">{job.title}</div>
-                  </div>
-                  <div className="p-3">
-                    <div className="text-xs uppercase mb-1">Company</div>
-                    <div className="text-sm">{job.company}</div>
-                  </div>
-                </button>
-              ))}
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+              <div className="lg:col-span-4 border-b-2 lg:border-b-0 lg:border-r-2 border-black">
+                {experience.map((job, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedYear(index)}
+                    className={`w-full text-left border-b-2 border-black last:border-b-0 transition-colors ${
+                      selectedYear === index
+                        ? 'bg-black text-white'
+                        : 'bg-white hover:bg-gray-100'
+                    }`}
+                  >
+                    <div className="p-3 border-b border-black">
+                      <div className="text-xs uppercase mb-1">Period</div>
+                      <div className="text-sm">{job.year}</div>
+                    </div>
+                    <div className="p-3 border-b border-black">
+                      <div className="text-xs uppercase mb-1">Role</div>
+                      <div className="text-sm">{job.title}</div>
+                    </div>
+                    <div className="p-3">
+                      <div className="text-xs uppercase mb-1">Company</div>
+                      <div className="text-sm">{job.company}</div>
+                    </div>
+                  </button>
+                ))}
+              </div>
 
-            {/* Timeline Details */}
-            <div className="lg:col-span-8">
-              <motion.div
-                key={selectedYear}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.2 }}
-                className="p-6"
-              >
-                <div className="border-b-2 border-black pb-4 mb-4">
-                  <div className="text-xs uppercase mb-2">Period</div>
-                  <div className="text-2xl mb-2">{experience[selectedYear].year}</div>
-                  <div className="text-xl mb-1">{experience[selectedYear].title}</div>
-                  <div className="text-base">{experience[selectedYear].company}</div>
-                </div>
-                
-                <div className="mb-6">
-                  <div className="text-xs uppercase mb-2">Description</div>
-                  <p className="text-sm leading-relaxed">{experience[selectedYear].description}</p>
-                </div>
-                
-                <div>
-                  <div className="text-xs uppercase mb-3">Key Achievements</div>
-                  <ul className="space-y-2">
-                    {experience[selectedYear].achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex gap-2">
-                        <span className="text-xs">—</span>
-                        <span className="text-sm leading-relaxed">{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
+              {/* Timeline Details */}
+              <div className="lg:col-span-8">
+                <motion.div
+                  key={selectedYear}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-6"
+                >
+                  <div className="border-b-2 border-black pb-4 mb-4">
+                    <div className="text-xs uppercase mb-2">Period</div>
+                    <div className="text-2xl mb-2">{experience[selectedYear].year}</div>
+                    <div className="text-xl mb-1">{experience[selectedYear].title}</div>
+                    <div className="text-base">{experience[selectedYear].company}</div>
+                  </div>
+                  
+                  <div className="mb-6">
+                    <div className="text-xs uppercase mb-2">Description</div>
+                    <p className="text-sm leading-relaxed">{experience[selectedYear].description}</p>
+                  </div>
+                  
+                  <div>
+                    <div className="text-xs uppercase mb-3">Key Achievements</div>
+                    <ul className="space-y-2">
+                      {experience[selectedYear].achievements.map((achievement, idx) => (
+                        <li key={idx} className="flex gap-2">
+                          <span className="text-xs">—</span>
+                          <span className="text-sm leading-relaxed">{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </div>
         </motion.div>
+          <section className= "py-6">
+            <a
+            href="https://www.dropbox.com/scl/fi/qvr7enp29pwehtuhf6h0b/Ana-Venancio_resume2026.pdf?rlkey=iizu5o5gzd0ktqwqrmlvih3ia&st=j6dkgtxi&dl=0"
+            className="uppercase tracking-tight hover:underline"
+          >
+            Resume →
+          </a>
+            </section> 
       </section>
+      
 
       {/* Skills */}
-      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -194,7 +206,7 @@ export function About() {
       </section>
 
       {/* Tools */}
-      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -224,7 +236,7 @@ export function About() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-[1400px] mx-auto px-4 py-12">
+      <section className="mx-auto px-4 py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -236,7 +248,7 @@ export function About() {
             Currently open to new opportunities in product design, UX research, and design systems.
           </p>
           <a
-            href="mailto:hello@example.com"
+            href="https://www.linkedin.com/in/anavrvenancio/"
             className="inline-block px-6 py-3 bg-black text-white hover:bg-gray-800 transition-colors uppercase text-sm tracking-tight border-2 border-black"
           >
             Get in Touch →

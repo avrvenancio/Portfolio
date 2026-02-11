@@ -10,7 +10,7 @@ const caseStudies = [
     title: 'Nokia Design System',
     category: 'Design Systems',
     description: 'Building a comprehensive design system for a Fortune 500 company, serving 50+ product teams',
-    year: '2024',
+    year: '2024-Present',
     tags: ['Design Systems', 'Component Library', 'Documentation'],
     image: 'https://images.unsplash.com/photo-1769149068959-b11392164add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBzeXN0ZW0lMjBjb21wb25lbnRzfGVufDF8fHx8MTc3MDYyMDQxNXww&ixlib=rb-4.1.0&q=80&w=1080',
   },
@@ -19,16 +19,16 @@ const caseStudies = [
     title: 'Nokia Cloud Manager',
     category: 'Product Design',
     description: 'Reimagining the mobile banking experience for 2M+ users with focus on accessibility and trust',
-    year: '2023',
+    year: '2024',
     tags: ['Mobile Design', 'UX Research', 'Accessibility'],
-    image: 'https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwaW50ZXJmYWNlJTIwbW9iaWxlJTIwYXBwfGVufDF8fHx8MTc3MDY0ODI1OXww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1690627931320-16ac56eb2588?q=80&w=3586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 3,
-    title: 'Teya Customer Support Platform',
-    category: 'UX Research',
+    title: 'Teya Customer Service Platform',
+    category: 'Product Design',
     description: 'Mixed-methods research study to improve patient portal engagement and health outcomes',
-    year: '2023',
+    year: '2021-2023',
     tags: ['User Research', 'Service Design', 'Healthcare'],
     image: 'https://images.unsplash.com/photo-1755985022555-09c0ec136e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcHJvZHVjdCUyMGRlc2lnbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzA2NDgyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
   },
@@ -98,16 +98,18 @@ export function Work({ onCaseStudyClick }: WorkProps) {
                 {/* Image */}
                 <div className="lg:col-span-8">
                   <div 
-                    className="aspect-[4/3] bg-gray-100 cursor-pointer hover:bg-gray-200 transition-colors relative group"
-                    onClick={() => onCaseStudyClick(study.id)}
+                    className="aspect-[4/3] bg-gray-100 cursor-pointer transition-colors relative group"
                   >
                     <img 
                       src={study.image} 
                       alt={study.title}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all flex items-center justify-center">
-                      <button className="opacity-0 group-hover:opacity-100 px-6 py-3 bg-white border-2 border-black uppercase text-sm tracking-tight hover:bg-black hover:text-white transition-colors">
+                    <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-10 transition-all flex items-center justify-center">
+                      <button 
+                        onClick={() => onCaseStudyClick(study.id)}
+                        className="opacity-0 group-hover:opacity-100 px-6 py-3 bg-white border-2 border-black uppercase text-sm tracking-tight hover:bg-black hover:text-white transition-colors"
+                      >
                         View Case Study →
                       </button>
                     </div>
