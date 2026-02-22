@@ -1,5 +1,5 @@
 
-  # Product Design Portfolio
+  # Portfolio
 
   This is a code bundle for Product Design Portfolio. The original project is available at https://www.figma.com/design/El6tA9Dk6VVJn2vXbJg52H/Product-Design-Portfolio.
 
