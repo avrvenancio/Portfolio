@@ -14,9 +14,9 @@ const caseStudyData = {
     hero: 'https://images.unsplash.com/photo-1769149068959-b11392164add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBzeXN0ZW0lMjBjb21wb25lbnRzfGVufDF8fHx8MTc3MDYyMDQxNXww&ixlib=rb-4.1.0&q=80&w=1080',
     overview: {
       problem: 'A Fortune 500 enterprise with 50+ product teams was experiencing significant design inconsistencies, duplicated work, and slow development cycles. Each team built their own components, resulting in 200+ different button styles across products.',
-      role: 'Lead Product Designer & Design Systems Architect',
-      timeline: '18 months (ongoing)',
-      team: 'Collaborated with 3 designers, 5 engineers, and product leadership',
+      role: 'UX Designer',
+      timeline: '1 year and 5 months (ongoing)',
+      team: '1 design lead, 2 designers, 5 developers, 2 testers and 1 product manager',
       impact: [
         '70% reduction in design-to-development time',
         '50+ teams adopted the system within 6 months',
@@ -164,16 +164,16 @@ const caseStudyData = {
     ],
   },
   2: {
-    title: 'Nokia Cloud Manager',
+    title: 'Nokia Cloud Operations Manager',
     subtitle: 'Reimagining the mobile banking experience for 2M+ users',
     category: 'Product Design',
     year: '2024',
     hero: 'https://images.unsplash.com/photo-1690627931320-16ac56eb2588?q=80&w=3586&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     overview: {
       problem: 'A regional bank\'s mobile app had a 3.2 star rating and declining usage. Users complained about confusing navigation, difficult task completion, and lack of trust signals. The business was losing customers to digital-first competitors.',
-      role: 'Lead Product Designer',
-      timeline: '9 months',
-      team: '2 designers, 1 researcher, 4 engineers, 1 PM',
+      role: 'UX Designer',
+      timeline: '1 year',
+      team: '1 lead designer, 3 designers, 50 developers, 15 architects, 6 product managers',
       impact: [
         'App rating increased from 3.2 to 4.6 stars',
         '35% increase in monthly active users',
@@ -316,15 +316,15 @@ const caseStudyData = {
   },
   3: {
     title: 'Teya Customer Service Platform',
-    subtitle: 'Mixed-methods research to improve patient portal engagement',
+    subtitle: 'Empowering frontline teams to support customers',
     category: 'Product Design',
     year: '2021-2023',
     hero: 'https://images.unsplash.com/photo-1755985022555-09c0ec136e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcHJvZHVjdCUyMGRlc2lnbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzA2NDgyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
     overview: {
       problem: 'A healthcare system\'s patient portal had only 22% active usage despite 1.2M registered patients. Low engagement meant patients weren\'t scheduling appointments, requesting refills, or viewing test results online, creating inefficiencies for both patients and staff.',
-      role: 'Lead UX Researcher',
-      timeline: '6 months',
-      team: '1 researcher (me), 2 designers, 1 data analyst, healthcare staff',
+      role: 'Product Designer',
+      timeline: '1 year and 8 months',
+      team: '1 designer, 1 tech manager, 5 developers, 1 product manager',
       impact: [
         'Identified 15 critical usability issues and opportunities',
         'Created actionable roadmap prioritized by impact',

@@ -66,7 +66,7 @@ export function About() {
   return (
     <div className="min-h-screen">
       {/* Intro */}
-      <section className="mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -86,7 +86,7 @@ export function About() {
       </section>
 
       {/* Experience Timeline */}
-      <section className="mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -173,7 +173,7 @@ export function About() {
       
 
       {/* Skills */}
-      <section className="mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -206,7 +206,7 @@ export function About() {
       </section>
 
       {/* Tools */}
-      <section className="mx-auto px-4 py-12 border-b-2 border-black">
+      <section className="max-w-[1400px] mx-auto px-4 py-12 border-b-2 border-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -236,7 +236,7 @@ export function About() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto px-4 py-12">
+      <section className="max-w-[1400px] mx-auto px-4 py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

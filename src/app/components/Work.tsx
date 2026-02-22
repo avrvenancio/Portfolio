@@ -16,7 +16,7 @@ const caseStudies = [
   },
   {
     id: 2,
-    title: 'Nokia Cloud Manager',
+    title: 'Nokia Cloud Operations Manager',
     category: 'Product Design',
     description: 'Reimagining the mobile banking experience for 2M+ users with focus on accessibility and trust',
     year: '2024',
@@ -27,9 +27,9 @@ const caseStudies = [
     id: 3,
     title: 'Teya Customer Service Platform',
     category: 'Product Design',
-    description: 'Mixed-methods research study to improve patient portal engagement and health outcomes',
+    description: 'Empowering frontline teams to support customers',
     year: '2021-2023',
-    tags: ['User Research', 'Service Design', 'Healthcare'],
+    tags: ['Product Design', 'User testing', 'Internal tools optimization'],
     image: 'https://images.unsplash.com/photo-1755985022555-09c0ec136e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcHJvZHVjdCUyMGRlc2lnbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzA2NDgyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
   },
 ];
